@@ -1,0 +1,13 @@
+{
+  "name": "ExampleExtension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "",
+  "browser_action": {},
+  "permissions": ["storage", "tabs", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

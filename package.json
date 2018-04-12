@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "extension",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  },
+  "dependencies": {
+    "metamask-extension": "git+https://github.com/MetaMask/metamask-extension.git",
+    "web3": "1.0.0-beta.29"
+  }
+}
