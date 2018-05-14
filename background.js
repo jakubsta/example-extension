@@ -4,7 +4,7 @@ import MetamaskInpageProvider from 'metamask-extension/app/scripts/lib/inpage-pr
 import PortStream from 'metamask-extension/app/scripts/lib/port-stream.js';
 
 const METAMASK_EXTENSION_ID = 'jahgpfaellhdfbjonknnlplbkmchbnng';
-const metamaskPort = chrome.runtime.connect(METAMASK_EXTENSION_ID, { name: 'popup' });
+const metamaskPort = chrome.runtime.connect(METAMASK_EXTENSION_ID);
 const pluginStream = new PortStream(metamaskPort);
 const web3Provider = new MetamaskInpageProvider(pluginStream);
 const web3 = new Web3(web3Provider);
